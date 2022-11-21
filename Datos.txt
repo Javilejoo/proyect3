@@ -1,0 +1,26 @@
+Grupo:
+Javier Prado - 21486
+Angel Perez - 21298
+Bryan Espana - 21550
+Programa para calcular el tiempo que viaja un sonido y la distancia que recorre
+Distancia
+La distancia es: 5 cm
+La distancia es: 5 cm
+La distancia es: 7 cm
+La distancia es: 8 cm
+La distancia es: 9 cm
+La distancia es: 10 cm
+La distancia es: 11 cm
+La distancia es: 13 cm
+La distancia es: 13 cm
+La distancia es: 14 cm
+La distancia es: 15 cm
+La distancia es: 16 cm
+La distancia es: 17 cm
+La distancia es: 17 cm
+La distancia es: 18 cm
+La distancia es: 19 cm
+La distancia es: 22 cm
+La distancia es: 23 cm
+La distancia es: 26 cm
+La distancia es: 123 cm
