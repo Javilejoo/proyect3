@@ -1,15 +1,15 @@
 int echoPin = 8;
 int trigPin = 9;
+int buzzerPin = 5;
 long time = 0;
-long distance = 0;
-
+float distance = 0.0;
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
+  pinMode(buzzerPin, OUTPUT);
   group();
-  delay(5000);
+  delay(3000);
 }
 
 void loop() {
@@ -26,13 +26,35 @@ void getDistance(){
 
   time = pulseIn(echoPin,HIGH);
   distance = (time/2)/29;
-  delay(500);
+  delay(100);
   Serial.print("La distancia es: ");
   Serial.print(distance);
   Serial.print(" cm");
   Serial.print("\n");
-  delay(200);
+  delay(10);
+    ////////////////
+   if (distance >= 16 && distance <= 22) //Si la distancia es menor de 
+   {
+    tone( buzzerPin, 3000, distance); //tone(pin, frequency, duration)
+    delay(distance);
+    }
+  else if (distance >= 11 && distance <= 15)
+  {
+    tone(buzzerPin, 3000, distance);
+    delay(distance);
+  }
+  else if (distance >= 5 && distance <= 10)
+  {
+    tone( buzzerPin, 3000, distance);
+    delay(distance);
+  }
+    else if (distance <= 4)
+  {
+    tone( buzzerPin, 3000, distance);
+    delay(distance);
+  }
 }
+
 
 void group(){
   Serial.print("Grupo:\n");
