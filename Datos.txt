@@ -4,23 +4,23 @@ Angel Perez - 21298
 Bryan Espana - 21550
 Programa para calcular el tiempo que viaja un sonido y la distancia que recorre
 Distancia
-La distancia es: 4.00 cm
-La distancia es: 4.00 cm
-La distancia es: 5.00 cm
-La distancia es: 4.00 cm
-La distancia es: 5.00 cm
-La distancia es: 6.00 cm
-La distancia es: 6.00 cm
-La distancia es: 5.00 cm
-La distancia es: 5.00 cm
-La distancia es: 6.00 cm
-La distancia es: 8.00 cm
-La distancia es: 8.00 cm
-La distancia es: 9.00 cm
-La distancia es: 10.00 cm
-La distancia es: 11.00 cm
-La distancia es: 11.00 cm
-La distancia es: 12.00 cm
-La distancia es: 13.00 cm
-La distancia es: 15.00 cm
-La distancia es: 16.00 cm
+La distancia es: 4.01 cm
+La distancia es: 3.28 cm
+La distancia es: 3.05 cm
+La distancia es: 3.04 cm
+La distancia es: 2.74 cm
+La distancia es: 2.92 cm
+La distancia es: 2.74 cm
+La distancia es: 2.98 cm
+La distancia es: 2.44 cm
+La distancia es: 2.76 cm
+La distancia es: 3.17 cm
+La distancia es: 4.18 cm
+La distancia es: 4.85 cm
+La distancia es: 5.81 cm
+La distancia es: 6.59 cm
+La distancia es: 7.20 cm
+La distancia es: 8.01 cm
+La distancia es: 9.11 cm
+La distancia es: 9.76 cm
+La distancia es: 11.04 cm

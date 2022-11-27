@@ -1,7 +1,7 @@
 int echoPin = 8;
 int trigPin = 9;
 int buzzerPin = 5;
-long time = 0;
+float time = 0;
 float distance = 0.0;
 void setup() {
   Serial.begin(9600);
@@ -25,7 +25,7 @@ void getDistance(){
   digitalWrite(trigPin,LOW);
 
   time = pulseIn(echoPin,HIGH);
-  distance = (time/2)/29;
+  distance = (time*0.0343/2);
   delay(100);
   Serial.print("La distancia es: ");
   Serial.print(distance);
