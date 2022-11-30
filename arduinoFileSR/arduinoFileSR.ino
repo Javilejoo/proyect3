@@ -1,32 +1,36 @@
-int echoPin = 8;
-int trigPin = 9;
-int buzzerPin = 5;
-float time = 0;
-float distance = 0.0;
+int echoPin = 8; // Echo Pin
+int trigPin = 9; // Trigger Pin
+int buzzerPin = 5; // Buzzer Pin
+float time = 0; // Time
+float distance = 0.0; //Distance
+
 void setup() {
-  Serial.begin(9600);
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
-  pinMode(buzzerPin, OUTPUT);
-  group();
-  delay(3000);
+  Serial.begin(9600);// Start Serial Communication
+  pinMode(trigPin, OUTPUT);//seteamos trigger pin como output
+  pinMode(echoPin, INPUT);//seteamos echo pin como input
+  pinMode(buzzerPin, OUTPUT);//seteamos buzzer pin como output
+  group();//llamamos a la funcion group
+  delay(3000);//esperamos 3 segundos
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  //codigo que se ejecuta continuamente
   getDistance();
 }
 
+//funcion para obtener la distancia
 void getDistance(){
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(5);
-  digitalWrite(trigPin,HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin,LOW);
+  digitalWrite(trigPin, LOW);//seteamos trigger pin en LOW
+  delayMicroseconds(5);//esperamos 5 microsegundos
+  digitalWrite(trigPin,HIGH);//seteamos trigger pin en HIGH
+  delayMicroseconds(10);//esperamos 10 microsegundos
+  digitalWrite(trigPin,LOW);//seteamos trigger pin en LOW
 
-  time = pulseIn(echoPin,HIGH);
-  distance = (time*0.0343/2);
-  delay(100);
+  time = pulseIn(echoPin,HIGH);//obtenemos el tiempo en microsegundos
+  distance = (time*0.0343/2);//convertimos el tiempo en distancia
+  delay(100);//esperamos 100 milisegundos
+
+  //imprimimos en el monitor serial la distancia
   Serial.print("La distancia es: ");
   Serial.print(distance);
   Serial.print(" cm");
@@ -35,22 +39,22 @@ void getDistance(){
     ////////////////
    if (distance >= 16 && distance <= 22) //Si la distancia es menor de 
    {
-    tone( buzzerPin, 3000, distance); //tone(pin, frequency, duration)
+    tone( buzzerPin, 300, distance); //tone(pin, frequency, duration)
     delay(distance);
     }
   else if (distance >= 11 && distance <= 15)
   {
-    tone(buzzerPin, 3000, distance);
+    tone(buzzerPin, 300, distance);
     delay(distance);
   }
   else if (distance >= 5 && distance <= 10)
   {
-    tone( buzzerPin, 3000, distance);
+    tone( buzzerPin, 300, distance);
     delay(distance);
   }
     else if (distance <= 4)
   {
-    tone( buzzerPin, 3000, distance);
+    tone( buzzerPin, 300, distance);
     delay(distance);
   }
 }
